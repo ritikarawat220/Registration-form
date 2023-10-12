@@ -1,15 +1,16 @@
 import React from 'react';
-import './App.css';
-import RegistrationForm from './components/RegistrationForm';
-import RegisteredUsersList from './components/RegisteredUsersList';
+import './App.css'; // Add your CSS imports here
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <RegistrationForm />
-        <RegisteredUsersList />
+        <h1>Event Registration App</h1>
       </header>
+      <main>
+        <Navbar />
+      </main>
     </div>
   );
 }

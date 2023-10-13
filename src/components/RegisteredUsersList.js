@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import UserDetails from './UserDetails';
+import UserDetailsPopup from './UserDetailsPopup';
 
 function RegisteredUsersList() {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const viewUserDetails = (index) => {
-    // When a user clicks "View Details," set the selected user to display details
     setSelectedUser(users[index]);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
   };
 
   useEffect(() => {
@@ -27,7 +32,9 @@ function RegisteredUsersList() {
           </li>
         ))}
       </ul>
-      {selectedUser && <UserDetails user={selectedUser} />}
+      {isPopupOpen && (
+        <UserDetailsPopup user={selectedUser} onClose={closePopup} />
+      )}
     </div>
   );
 }

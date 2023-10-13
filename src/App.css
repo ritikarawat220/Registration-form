@@ -92,3 +92,46 @@ body {
   margin: 0;
   padding: 5px 0;
 }
+
+/* RegistrationForm.css */
+.registration-form-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* UserDetails.css */
+.user-details-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}

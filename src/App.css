@@ -135,3 +135,20 @@ body {
 .registration-form button:hover {
   background-color: #0056b3;
 }
+
+.input-field {
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-field.error {
+  border-color: red; /* Add your desired border color for error state */
+  animation: shake 0.4s ease infinite; /* Example animation for error state */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}

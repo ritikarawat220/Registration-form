@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Event Registration App</h1>
       </header>
       <main>
         <Navbar />

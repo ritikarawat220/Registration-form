@@ -18,7 +18,7 @@ function RegisteredUsersList() {
 
   return (
     <div>
-      <h2>Registered Users for the Event</h2>
+      <h2 className='event'>Registered Users for the Event</h2>
       <ul>
         {users.map((user, index) => (
           <li key={index}>

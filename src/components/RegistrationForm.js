@@ -50,8 +50,8 @@ function RegistrationForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="registration-form-container">
+      <form className="registration-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"

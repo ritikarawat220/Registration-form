@@ -6,19 +6,19 @@ import RegisteredUsersList from './RegisteredUsersList';
 function Navbar() {
   return (
     <Router>
-      <nav>
+      <nav className="navbar">
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="right">
             <Link to="/registered-users">Registered Users</Link>
           </li>
         </ul>
       </nav>
 
       <Routes>
-        <Route path="/" element={<RegistrationForm />} /> {/* Use element instead of component */}
+        <Route path="/" element={<RegistrationForm />} />
         <Route path="/registered-users" element={<RegisteredUsersList />} />
       </Routes>
     </Router>

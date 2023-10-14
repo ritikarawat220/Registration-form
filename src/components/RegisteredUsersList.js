@@ -24,11 +24,11 @@ function RegisteredUsersList() {
   return (
     <div>
       <h2 className='event'>Registered Users for the Event</h2>
-      <ul>
+      <ul className='map'>
         {users.map((user, index) => (
           <li key={index}>
             {user.name} ({user.timestamp}){' '}
-            <button onClick={() => viewUserDetails(index)}>View Details</button>
+            <button className='view-details' onClick={() => viewUserDetails(index)}>View Details</button>
           </li>
         ))}
       </ul>

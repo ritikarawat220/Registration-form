@@ -166,3 +166,8 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
+
+.map {
+  list-style-type: disclosure-closed;
+  font-size: larger;
+}
